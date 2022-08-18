@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.locnguyen.inventorymanagementsystemlocnguyen"},{"l":"com.locnguyen.inventorymanagementsystemlocnguyen.controller"},{"l":"com.locnguyen.inventorymanagementsystemlocnguyen.model"}];updateSearchResults();

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="699.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.locnguyen.inventorymanagementsystemlocnguyen.controller.AddProductScreenController">
+   <children>
+      <TextField fx:id="productPartSearch" layoutX="693.0" layoutY="32.0" onAction="#searchPartTable" onKeyPressed="#restorePartSearch" prefHeight="25.0" prefWidth="190.0" promptText="Search by Part ID or Name" />
+      <Label layoutX="36.0" layoutY="44.0" text="Add Product">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="110.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="161.0" text="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="222.0" text="Inv">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="278.0" text="Price">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="337.0" text="Max">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="338.0" text="Min">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addProductID" editable="false" layoutX="127.0" layoutY="108.0" promptText="Auto Gen - Disabled">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addProductName" layoutX="127.0" layoutY="159.0" />
+      <TextField fx:id="addProductInv" layoutX="127.0" layoutY="220.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField fx:id="addProductPrice" layoutX="127.0" layoutY="276.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField fx:id="addProductMax" layoutX="127.0" layoutY="335.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField fx:id="addProductMin" layoutX="275.0" layoutY="336.0" prefHeight="25.0" prefWidth="83.0" />
+      <TableView fx:id="partTable" layoutX="458.0" layoutY="71.0" prefHeight="240.0" prefWidth="425.0">
+        <columns>
+          <TableColumn fx:id="partID" prefWidth="75.0" text="Part ID" />
+          <TableColumn fx:id="partName" prefWidth="115.0" text="Part Name" />
+            <TableColumn fx:id="partInvLevel" prefWidth="98.0" text="Inventory Level" />
+            <TableColumn fx:id="partPricePerUnit" prefWidth="136.0" text="Price/Cost Per Unit" />
+        </columns>
+      </TableView>
+      <TableView fx:id="associatedPartTable" layoutX="458.0" layoutY="358.0" prefHeight="240.0" prefWidth="425.0">
+         <columns>
+            <TableColumn fx:id="associatedPartID" prefWidth="75.0" text="Part ID" />
+            <TableColumn fx:id="associatedPartName" prefWidth="115.0" text="Part Name" />
+            <TableColumn fx:id="associatedPartInvLevel" prefWidth="98.0" text="Inventory Level" />
+            <TableColumn fx:id="associatedPartPricePerUnit" prefWidth="136.0" text="Price/Cost Per Unit" />
+         </columns>
+      </TableView>
+      <Button fx:id="addProductBtn" layoutX="839.0" layoutY="320.0" mnemonicParsing="false" onAction="#addToAssociatedTable" text="Add">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="removeProductBtn" layoutX="716.0" layoutY="608.0" mnemonicParsing="false" onAction="#removeFromAssociatedTable" text="Remove Associated Part">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveProductBtn" layoutX="788.0" layoutY="655.0" mnemonicParsing="false" onAction="#addingProduct" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelBtn" layoutX="846.0" layoutY="655.0" mnemonicParsing="false" onAction="#cancelBtnClicked" text="Cancel">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
