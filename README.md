@@ -1,6 +1,6 @@
 # Inventory Management System
 
-*Student Project for WGU's C482 - Software I Course*
+*A Java Student Project for WGU's C482 - Software I Course*
 
 ## SCENARIO
 You are working for a small manufacturing organization that has outgrown its current inventory system. They have been using a spreadsheet program to manually enter inventory additions, deletions, and other data from a paper-based system but would now like you to develop a more sophisticated inventory program.
